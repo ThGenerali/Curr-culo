@@ -1,0 +1,28 @@
+.cabecalho h1 {
+    margin: 0;
+    font-size: 47px;
+    color: rgba(255, 255, 255, 0.01);
+    background-image: url("../img/backgroundAnimationText.jpg");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        backgound-position: left top;
+    }
+    25% {
+        backgound-position: right bottom;
+    }
+    50% {
+        background-position: left bottom;
+    }
+    75% {
+        background-position: right top;
+    }
+}
